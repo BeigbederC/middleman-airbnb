@@ -12,12 +12,6 @@
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
-      <%= partial "layouts/navbar" %>
-
-      <div class="footer-bottom">
-        <%= yield %>                      <!-- Page content is injected here -->
-      </div>
-       <!-- inject layouts/_navbar.html.erb -->
-      <%= partial "layouts/footer" %>   <!-- inject layouts/_footer.html.erb -->
+    <%= yield %>
   </body>
 </html>
